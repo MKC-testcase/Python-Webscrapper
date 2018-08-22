@@ -40,23 +40,13 @@ i = 0
 for data_2 in DataFixed:
 	i= i+1
 	data_2 = ''.join(c for c in data_2 if c not in '"' )
+	"""the temp_data_2 = temp_data_2[2:] just takes off a couple of characters on the end"""
 	temp_data_2 = ''.join(c for c in data_2 if c not in 'abcdeghijklmnopqrstuvwxyz-:/+ ' )
 	temp_data_2 = temp_data_2[2:]
 	if i == 2:
 		temp_data_2 = temp_data_2[2:]
+	""" From here we must remove put the values of temp_data_2 into a real array and do it by iterating a counter"""
 	print(temp_data_2)
 	
 """implement sent to csv file append not write over"""
 
-
-
-
-
-#figure out how to get the day range and the 52 week range later
-"""should have 2 elements order(Day's Range, 52 Week Range), """
-"""
-for data_3 in DataRange:
-	data_3 = ''.join(c for c in data_3 if c not in '"' )
-	temp_data_3 = ''.join(c for c in data_3 if c not in 'abcdeghijklmnopqrstuvwxyz-:/+ ' )
-	print(temp_data_3)
-"""
