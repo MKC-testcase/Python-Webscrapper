@@ -40,6 +40,7 @@ i = 0
 for data_2 in DataFixed:
 	i= i+1
 	data_2 = ''.join(c for c in data_2 if c not in '"' )
+	"""the temp_data_2 = temp_data_2[2:] just takes off a couple of characters on the end"""
 	temp_data_2 = ''.join(c for c in data_2 if c not in 'abcdeghijklmnopqrstuvwxyz-:/+ ' )
 	temp_data_2 = temp_data_2[2:]
 	if i == 2:
